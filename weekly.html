@@ -1,0 +1,54 @@
+---
+layout: page
+title: 周刊
+permalink: /weekly.html
+---
+
+## 潮流周刊
+
+每周更新，分享一些我看到的好东西，以及这周的思考。
+
+---
+
+## 往期周刊
+
+{% for post in site.posts %}
+  {% if post.categories contains "周刊" %}
+  <div class="post-item">
+    <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+  </div>
+  {% endif %}
+{% endfor %}
+
+---
+
+## 周刊内容格式参考
+
+```
+---
+layout: post
+title: "周刊第 X 期"
+date: 2025-01-04 12:00:00
+summary: "本期内容包括：xxx, xxx, xxx"
+categories: 周刊
+---
+
+## 本期推荐
+
+### 工具/资源
+- [标题](链接) - 简短的介绍
+
+### 有趣的文章
+- [标题](链接) - 简短的介绍
+
+### 言论
+> 一些值得思考的话
+
+## 本周思考
+本周的一些个人感悟...
+```
+
+## 分类说明
+
+周刊文章使用 `categories: 周刊` 标签，这样会被自动归类到这里。

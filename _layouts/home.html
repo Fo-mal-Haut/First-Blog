@@ -1,0 +1,9 @@
+---
+layout: base
+---
+
+{% if site.posts.size > 0 %}
+{% assign current_posts = site.posts | sort: 'date' | reverse %}
+{% include post-item.html posts=current_posts %}
+{% endif %}
+{{ content }}
