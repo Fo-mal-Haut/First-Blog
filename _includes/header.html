@@ -6,9 +6,9 @@
   <ul class="header-item-container">
     <li class="header-item-title {{homeActive}}">
       {% if page.url contains '/en/' %}
-      <a href="{{site.url}}/en" class="title"> {{ site.title }}</a>
+      <a href="{{site.baseurl}}/en" class="title"> {{ site.title }}</a>
       {% else %}
-      <a href="{{site.url}}/" class="title"> {{ site.title }}</a>
+      <a href="{{site.baseurl}}/" class="title"> {{ site.title }}</a>
       {% endif %}
     </li>
 
@@ -33,9 +33,9 @@
     <li class="header-item {{class}}"><a href="{{menu.url}}" target="_blank" rel="noopener noreferrer">{{ menu.title }}</a></li>
     {% else %}
     {% if page.url contains '/en/' %}
-    <li class="header-item {{class}}"><a href="{{site.url}}/en/{{menu.url}}">{{ menu.title }}</a></li>
+    <li class="header-item {{class}}"><a href="{{site.baseurl}}/en/{{menu.url}}">{{ menu.title }}</a></li>
     {% else %}
-    <li class="header-item {{class}}"><a href="{{site.url}}{{menu.url}}">{{ menu.title }}</a></li>
+    <li class="header-item {{class}}"><a href="{{site.baseurl}}{{menu.url}}">{{ menu.title }}</a></li>
     {% endif %}
     {% endif %}
     {% endfor %}

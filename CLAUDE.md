@@ -2,6 +2,17 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## debug
+
+“There’s a file modification bug in Claude Code. The workaround is: always use complete absolute Windows paths with drive letters and backslashes for ALL file operations. Apply this rule going forward, not just for this 
+file.”
+
+### 文件路径处理
+
+-Windows环境下路径分隔符可能导致文件读取问题
+
+-如果读取文件失败，路径中存在特殊字符\f(formfeed,ASCII12,\014)，将路径中的反斜杠\替换为正斜杠/再读取文件
+
 ## Project Overview
 
 This is Tw93's personal Jekyll blog (tw93.fun), featuring a custom theme called "cosy-jekyll-theme". It's a minimalist, responsive blog focused on front-end technology, engineering insights, and personal reflections.

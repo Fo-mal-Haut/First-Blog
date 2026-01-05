@@ -76,7 +76,7 @@
   <link rel="preconnect" href="https://www.googletagmanager.com">
 
   <!-- Styles and Scripts -->
-  <link rel="stylesheet" href="{{ site.url }}/css/index.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/index.css">
   <link rel="preload" href="https://gw.alipayobjects.com/os/k/jinkai/style.css" as="style" crossorigin="anonymous">
   <link rel="stylesheet" href="https://gw.alipayobjects.com/os/k/jinkai/style.css" crossorigin="anonymous">
 
@@ -97,7 +97,7 @@
   <meta name="robots" content="index, follow">
 
   <!-- Feed -->
-  <link href="{{ site.url }}/feed.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
+  <link href="{{ site.baseurl }}/feed.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
 
   <!-- Performance: Reduce render blocking -->
   <link rel="preconnect" href="https://giscus.app">
@@ -159,7 +159,7 @@
     "inLanguage": "{{ site.lang }}",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "{{ site.url }}/search.json?q={search_term_string}",
+      "target": "{{ site.baseurl }}/search.json?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   }
