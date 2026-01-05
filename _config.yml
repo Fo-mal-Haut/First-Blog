@@ -1,8 +1,9 @@
 # Site Information
 title: "Fomalhaut的个人网站"
 description: "分享生活、AI、学习和社会观察的个人博客"
-url: https://fomalhaut.github.io
-repo: fomalhaut/fomalhaut.github.io
+url: https://fo-mal-haut.github.io
+baseurl: /First-Blog
+repo: fo-mal-haut/First-Blog
 lang: zh-CN
 encoding: utf-8
 timezone: Asia/Shanghai
