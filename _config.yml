@@ -72,7 +72,7 @@ exclude:
 # Plugins
 plugins:
   - jekyll-paginate
-  # - jekyll-pdf-embed
+  - jekyll-pdf-embed
   - jekyll-sitemap
   - jekyll-feed
 
