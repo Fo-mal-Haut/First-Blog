@@ -31,3 +31,6 @@ Thumbs.db
 # Misc
 *.bak
 *~
+
+# Temporary files
+Gemfile.lock
